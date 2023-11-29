@@ -1,12 +1,12 @@
 <img src="_media/logo.svg" class="cover-logo" >
 
-> A magical documentation site generator.
+<!-- > A magical documentation site generator. -->
+<!---->
+<!-- - Simple and lightweight -->
+<!-- - No statically built html files -->
+<!-- - Multiple themes -->
 
-- Simple and lightweight
-- No statically built html files
-- Multiple themes
-
-[TMM](https://github.com/docsifyjs/docsify/)
-[Get Started](#docsify)
+[TMM](https://tradermake.money)
+[Get Started](#the-essential-tool-for-trading-mastery)
 
 ![color](#212431)
