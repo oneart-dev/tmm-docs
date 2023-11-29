@@ -1,2 +1,3 @@
 - [Quick start](/)
 - [Summary](summary.md)
+- [My trades](my-trades.md)
