@@ -1,0 +1,34 @@
+:root {
+  --base-font-family: "Roboto", sans-serif !important;
+  --siteFont: "Roboto", sans-serif !important;
+  --cover-blockquote-color: #fff !important;
+  --cover-background-mask-color: ;
+  --cover-background-image: linear-gradient(
+    204deg,
+    rgba(33, 36, 49, 1) 0%,
+    rgba(50, 65, 96, 1) 44%,
+    rgba(50, 65, 96, 1) 71%,
+    rgba(33, 36, 49, 1) 100%
+  ) !important;
+  --content-max-width: min(80em, 90%) !important;
+}
+.sidebar > h1 img {
+  max-width: 150px !important;
+}
+
+.cover-logo {
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  width: 50%;
+  max-width: 300px;
+}
+
+.app-nav p {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: #fff;
+}
+
+.cover {
+  color: #fff;
+}
