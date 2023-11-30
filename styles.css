@@ -1,6 +1,8 @@
 :root {
   --base-font-family: "Roboto", sans-serif !important;
   --siteFont: "Roboto", sans-serif !important;
+  --content-max-width: min(80em, 90%) !important;
+
   --cover-blockquote-color: #fff !important;
   --cover-background-mask-color: ;
   --cover-background-image: linear-gradient(
@@ -10,10 +12,56 @@
     rgba(50, 65, 96, 1) 71%,
     rgba(33, 36, 49, 1) 100%
   ) !important;
-  --content-max-width: min(80em, 90%) !important;
+
+  --sidebar-padding: 10px;
+  --sidebar-nav-link-margin: 0 -10px 0 0;
+  --sidebar-nav-link-color: #e8e8e8 !important;
+  --sidebar-nav-link-color--active: #fff !important;
+  --sidebar-background: #131c2e;
+  --sidebar-toggle-background: #131c2e !important;
+  --sidebar-toggle-border-radius: 0 5px 5px 0 !important;
+  --sidebar-toggle-icon-color: #fff !important;
+  --sidebar-nav-pagelink-background--active: no-repeat 0px center / 5px 6px
+      linear-gradient(
+        225deg,
+        transparent 2.75px,
+        rgba(80, 200, 120, 1) 2.75px 4.25px,
+        transparent 4.25px
+      ),
+    no-repeat 5px center / 5px 6px
+      linear-gradient(
+        135deg,
+        transparent 2.75px,
+        rgba(80, 200, 120, 1) 2.75px 4.25px,
+        transparent 4.25px
+      );
+  --sidebar-nav-link-border-color--active: rgba(80, 200, 120, 1);
+  --sidebar-nav-pagelink-background--collapse: no-repeat 2px calc(50% - 2.5px) /
+      6px 5px
+      linear-gradient(
+        45deg,
+        transparent 2.75px,
+        rgba(80, 200, 120, 1) 2.75px 4.25px,
+        transparent 4px
+      ),
+    no-repeat 2px calc(50% + 2.5px) / 6px 5px
+      linear-gradient(
+        135deg,
+        transparent 2.75px,
+        rgba(80, 200, 120, 1) 2.75px 4.25px,
+        transparent 4px
+      );
+
+  --blockquote-border-color: rgba(80, 200, 120, 1);
 }
+
 .sidebar > h1 img {
   max-width: 150px !important;
+}
+
+.sidebar-nav a,
+.sidebar nav a {
+  white-space: wrap;
 }
 
 .cover-logo {
@@ -26,9 +74,27 @@
   background: rgba(0, 0, 0, 0.8);
   padding: 0.5em;
   border-radius: 0.5em;
-  color: #fff;
+  color: #c1e3cc;
 }
 
 .cover {
   color: #fff;
+}
+
+.app-nav:not(:empty) ~ main .markdown-section {
+  padding-top: 4.5rem;
+}
+
+.github-corner svg {
+  fill: #131c2e;
+}
+
+picture + em {
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.docsify-example-panel img {
+  max-width: 100%;
 }

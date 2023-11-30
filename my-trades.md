@@ -8,7 +8,9 @@ can delve into each trade individually.
 
 ## Example
 
-![logo](_media/summary/my-trades.png)
+<picture > <source srcset="_media/my-trades/my-trades-dark.png"
+    media="(prefers-color-scheme: dark)"> <img
+        src="_media/my-trades/my-trades.png" > </picture>
 
 1. Open/Close filters
 2. Export to CSV
@@ -20,9 +22,9 @@ can delve into each trade individually.
 8. Outlined indicator of open trade
 9. Switch trade opening mode
 10. Summary for the current page trades
-11. Amount of trades per page <sup>**Performance Impact**: Be aware that selecting a
-    higher number of trades to display can impact the performance and
-    responsiveness of the system</sup>
+11. Amount of trades per page <sup>**Performance Impact**: Be aware that
+    selecting a higher number of trades to display can impact the performance
+    and responsiveness of the system</sup>
 12. Pagination
 
 #### Recording Entry Reasons
@@ -63,7 +65,7 @@ Effortlessly export your trading data:
 
 1. **Prepare for Export**: Use filters to select the trades you want to export.
 2. **Export**: Hit the 'EXPORT' button to download a CSV file of your filtered
-   trades.
+   trades. [[#2]](#example)
 3. **Opening CSV Files**: If unable to open the CSV, use
    [sheets.new](https://sheets.new)
 
@@ -78,13 +80,13 @@ Personalize your trades table for optimal analysis:
    - Enable or disable specific columns, focusing only on the information that's
      important to you.
 
-## Selecting Your Preferred Trade Viewing Mode
+## Trade Viewing Mode
 
 'My Trades' offers two modes for viewing trade details, tailored to your viewing
 preferences:
 
 **Changing the Mode**: Look for the mode selection buttons at the lower left
-corner of the trades table.
+corner of the trades table [[#9]](#example)
 
 1. **Fullscreen Mode**: This mode is especially useful for smaller screens,
    providing a clear and focused view of each trade.
@@ -93,6 +95,19 @@ corner of the trades table.
 
 Feel free to switch between these modes depending on how you wish to analyze
 your trades at any given moment.
+
+## Keyboard Shortcuts for Navigation
+
+Enhance your trading analysis with these keyboard shortcuts, designed for quick
+and efficient navigation through your trades:
+
+- **Space**: Toggle the expansion of a trade's details.
+- **Arrow Down** or **Tab**: Move to the next trade in the list. If you're on
+  the last trade, this will advance to the next page.
+- **Arrow Up**: Move to the previous trade. If you're on the first trade, this
+  will go back to the previous page.
+- **Enter**: Jump into typing the entry reason for the selected trade. Once
+  you're done, hit **Tab** to complete and move to the next trade.
 
 ## Bulk Actions
 

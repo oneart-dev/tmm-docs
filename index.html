@@ -14,6 +14,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
+      async
     />
     <link
       rel="stylesheet"
@@ -26,6 +27,17 @@
       href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="styles-light.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="stylesheet"
+      href="styles-dark.css"
+      media="(prefers-color-scheme:
+      dark)"
+    />
   </head>
   <body>
     <div id="app"></div>
@@ -40,9 +52,40 @@
         fallbackLanguages: ["en", "ru"],
         logo: "_media/logo.svg",
         subMaxLevel: 2,
+        autoFooter: {
+          // the name you wish to display as the copyright holder
+          name: "TMM",
+
+          // the URL (personal or company) which clicking the `name` goes to
+          url: "https://tradermake.money",
+
+          // the start year of copyright
+          copyYear: 2023,
+
+          // show the privacy policy link
+          policy: "https://tradermake.money/privacy-policy/",
+
+          // show the terms of service link
+          terms: "https://tradermake.money/terms-and-conditions/",
+
+          // show the cookies policy link
+          cookies: false,
+
+          // use your own css styles or the built in ones
+          // customStyle: Bool | String,
+        },
       };
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@markbattistella/docsify-sidebarfooter@latest"
+      async
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-example-panels"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"
+      async
+    ></script>
   </body>
 </html>

@@ -22,7 +22,10 @@ needed to tailor your dashboard to your unique trading strategy and preferences.
 
 ## Example
 
-![logo](_media/summary/summary.png)
+<picture>
+    <source srcset="_media/summary/summary-dark.png" media="(prefers-color-scheme: dark)">
+    <img src="_media/summary/summary.png">
+</picture>
 
 1. Dashboard name
 2. Dashboard actions: filters, dupliate, share, delete
