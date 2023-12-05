@@ -4,3 +4,6 @@
 - [Diary](diary.md)
 - [Risk management](risk-management.md)
 - [Telegram-bot](telegram-bot.md)
+- [Data filtering](filters.md)
+
+<footer id="mb-footer"></footer>

@@ -59,17 +59,19 @@ Optimize your analysis with powerful filtering:
 3. **Saving Presets**: Save your filter settings as presets for future use.
    Favorite a preset for automatic application on your return.
 
+Read [data filtering](filters.md#understanding-data-filtering) section.
+
 ## Exporting Trades
 
 Effortlessly export your trading data:
 
 1. **Prepare for Export**: Use filters to select the trades you want to export.
 2. **Export**: Hit the 'EXPORT' button to download a CSV file of your filtered
-   trades. [[#2]](#example)
+   trades. [[\#2]](#example)
 3. **Opening CSV Files**: If unable to open the CSV, use
    [sheets.new](https://sheets.new)
 
-## Tailoring the Table View
+## Table setup
 
 Personalize your trades table for optimal analysis:
 
@@ -96,36 +98,101 @@ corner of the trades table [[#9]](#example)
 Feel free to switch between these modes depending on how you wish to analyze
 your trades at any given moment.
 
-## Keyboard Shortcuts for Navigation
+## Keyboard Shortcuts
 
 Enhance your trading analysis with these keyboard shortcuts, designed for quick
 and efficient navigation through your trades:
 
-- **Space**: Toggle the expansion of a trade's details.
-- **Arrow Down** or **Tab**: Move to the next trade in the list. If you're on
-  the last trade, this will advance to the next page.
-- **Arrow Up**: Move to the previous trade. If you're on the first trade, this
+- <kbd>Space</kbd>: Toggle the expansion of a trade's details.
+- <kbd>↓</kbd> or <kbd>TAB</kbd>: Move to the next trade in the list. If you're
+  on the last trade, this will advance to the next page.
+- <kbd>↑</kbd>: Move to the previous trade. If you're on the first trade, this
   will go back to the previous page.
-- **Enter**: Jump into typing the entry reason for the selected trade. Once
-  you're done, hit **Tab** to complete and move to the next trade.
+- <kbd>Enter</kbd> or <kbd>Return</kbd>: Jump into typing the entry reason for
+  the selected trade. Once you're done, hit <kbd>TAB</kbd> to complete and move
+  to the next trade.
 
 ## Bulk Actions
+
+<!-- panels:start -->
+<!-- div:left-panel -->
 
 Bulk actions simplify managing multiple trades at once:
 
 1. **Selecting Trades for Bulk Actions**:
 
-   - Use the checkboxes next to each trade to select individual trades.
-   - Select all trades on the page by clicking the checkbox in the table header.
+- Use the checkboxes next to each trade to select individual trades.
+- Select all trades on the page by clicking the checkbox in the table header.
+
+<!-- div:right-panel -->
+
+<picture> <source srcset="_media/my-trades/select-dark.png"
+    media="(prefers-color-scheme: dark)"> <img src="_media/my-trades/select.png"
+        class="medium-img"> </picture> <em>Select trades</em>
+
+<!-- panels:end -->
+
+<!-- panels:start -->
+<!-- div:left-panel -->
 
 2. **Available Bulk Actions**:
-   - **Change Category**: Move selected trades to a different category, such as
-     'Archive', to organize your view.
-   - **Merge Trades**: Combine selected trades that match in API key, ticker,
-     and side, provided they are all closed.
-   - **Edit Entry Reasons**: Apply or modify entry reasons to all selected
-     trades at once.
-   - **Bulk Share**: Generate a single link to share the selected trades.
+
+- **Change Category**: Move selected trades to a different category, such as
+  'Archive', to organize your view.
+- **Merge Trades**: Combine selected trades that match in API key, ticker, and
+  side, provided they are all closed.
+- **Edit Entry Reasons**: Apply or modify entry reasons to all selected trades
+  at once.
+- **Bulk Share**: Generate a single link to share the selected trades.
+
+<!-- div:right-panel -->
+
+<picture> <source srcset="_media/my-trades/bulk-dark.png"
+    media="(prefers-color-scheme: dark)"> <img src="_media/my-trades/bulk.png"
+        class="small-img"> </picture> <em>Bulk actions popup</em>
+
+<!-- panels:end -->
+
+## Start from scratch (Archive)
+
+### What is the Archive Category?
+
+The Archive category lets you hide trades from statistical calculations and
+views on the platform. It's a way to organize or 'start over' with your trading
+data without deleting your history.
+
+<!-- panels:start -->
+<!-- div:left-panel -->
+
+### Archiving All Trades
+
+To move all trades to the Archive:
+
+1. Go to 'Profile Settings'.
+2. Click 'Archive All Trades'.
+
+<!-- div:right-panel -->
+
+> **Remark on Public Profile:**
+>
+> Archiving trades doesn't affect statistics in the Public Profile. To reset
+> stats in PP, you need to delete your API key and create a new account on the
+> exchange. Adding new key from the same account will redownload all the trades
+> again.
+
+<!-- panels:end -->
+
+### Moving Selected Trades to Archive
+
+Check [bulk actions](#bulk-actions) section for detailed guide.
+
+1. Select trades in the 'My Trades' table.
+2. Click 'Change Category' to 'Archive'.
+
+### Retrieving Trades from Archive
+
+1. In 'My Trades', open filters and select 'Archive'.
+2. Choose trades and select 'Change Category' to 'No Category'.
 
 ## Sharing Trades
 
@@ -156,6 +223,8 @@ Control how your profit is displayed when sharing:
      setting must be enabled for profit in $ to be visible in shared trades.
 
 ## Table Columns Explained
+
+> You can disable columns or change order/apperance [table setup](#table-setup)
 
 1. **Ticker**: Symbol of the traded asset for example "BTCUSDT".
 2. **Leverage**: The leverage used, relative to account balance. **\***

@@ -1,6 +1,6 @@
 :root {
-  --base-font-family: "Roboto", sans-serif !important;
-  --siteFont: "Roboto", sans-serif !important;
+  --base-font-family: 'Roboto', sans-serif !important;
+  --siteFont: 'Roboto', sans-serif !important;
   --content-max-width: min(80em, 90%) !important;
 
   --cover-blockquote-color: #fff !important;
@@ -53,13 +53,36 @@
       );
 
   --blockquote-border-color: rgba(80, 200, 120, 1);
+
+  --kbd-margin: 0.1em 0.3em;
+  --kbd-padding: 0.35em 0.5em;
 }
 
 .sidebar > h1 img {
   max-width: 150px !important;
 }
 
-.sidebar-nav a,
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#mb-footer {
+  margin-top: auto !important;
+  text-align: center;
+}
+
+#mb-footer a {
+  display: inline;
+  margin: 0 0.5em;
+}
+
+.footer-text-copyright {
+  color: #e0e0e0;
+}
+
+.footer-van .sidebar-nav a,
 .sidebar nav a {
   white-space: wrap;
 }
@@ -97,4 +120,62 @@ picture + em {
 
 .docsify-example-panel img {
   max-width: 100%;
+}
+
+.right-panel:has(picture) {
+  text-align: center;
+}
+
+.right-panel:has(blockquote) {
+  padding: 0 !important;
+}
+.right-panel:has(blockquote) blockquote {
+  margin: 0 !important;
+}
+.right-panel .small-img {
+  max-width: 200px;
+  object-fit: scale-down;
+  border-radius: 1em;
+}
+.right-panel .medium-img {
+  max-width: 300px;
+  object-fit: scale-down;
+  border-radius: 1em;
+}
+
+a {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  text-decoration: none !important;
+}
+
+p a {
+  letter-spacing: 0.05em;
+}
+
+p a:hover {
+  letter-spacing: 0.07em;
+}
+
+a:hover::before {
+  content: '';
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
+}
+
+p a::before {
+  transition: all 0.2s ease-out;
+  top: 100%;
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
 }

@@ -39,40 +39,41 @@
       dark)"
     />
   </head>
+
   <body>
     <div id="app"></div>
     <script>
       window.$docsify = {
-        name: "Trader Make Money",
-        repo: "https://github.com/oneart-dev/tmm-docs",
+        name: 'Trader Make Money',
+        repo: 'https://github.com/oneart-dev/tmm-docs',
         loadSidebar: true,
         loadNavbar: true,
         coverpage: true,
-        coverpage: ["/", "/ru/"],
-        fallbackLanguages: ["en", "ru"],
-        logo: "_media/logo.svg",
+        coverpage: ['/', '/ru/'],
+        fallbackLanguages: ['en', 'ru'],
+        logo: '_media/logo.svg',
         subMaxLevel: 2,
         autoFooter: {
           // the name you wish to display as the copyright holder
-          name: "TMM",
+          name: 'TMM',
 
           // the URL (personal or company) which clicking the `name` goes to
-          url: "https://tradermake.money",
+          url: 'https://tradermake.money',
 
           // the start year of copyright
           copyYear: 2023,
 
           // show the privacy policy link
-          policy: "https://tradermake.money/privacy-policy/",
+          policy: 'https://tradermake.money/privacy-policy/',
 
           // show the terms of service link
-          terms: "https://tradermake.money/terms-and-conditions/",
+          terms: 'https://tradermake.money/terms-and-conditions/',
 
           // show the cookies policy link
           cookies: false,
 
           // use your own css styles or the built in ones
-          // customStyle: Bool | String,
+          customStyle: true,
         },
       };
     </script>
@@ -87,5 +88,18 @@
       src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"
       async
     ></script>
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({
+        startOnLoad: true,
+        theme:
+          window.matchMedia &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'default',
+      });
+      window.mermaid = mermaid;
+    </script>
+    <script src="//unpkg.com/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
   </body>
 </html>
