@@ -1,4 +1,4 @@
-# Summary Section Overview
+# Summary Section Overview <a target="_blank" href="https://tradermake.money/app2/account/index" class="btn btn-header">Go to summary</a>
 
 Summary section is your comprehensive dashboard for trading analysis and
 performance tracking. This section is structured to offer you maximum

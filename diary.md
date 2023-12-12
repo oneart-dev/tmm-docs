@@ -1,4 +1,4 @@
-# The "Diary": Your Automated Reflection Tool
+# The "Diary": Your Automated Reflection Tool <a target="_blank" href="https://tradermake.money/app2/account/analyzer" class="btn btn-header">Go to diary</a>
 
 The "Diary" section was meticulously crafted to offer an effortless,
 zero-configuration experience for traders who prefer a straightforward review
@@ -56,8 +56,8 @@ your trading journey.
 ## Weekly Analysis
 
 <picture> <source srcset="_media/diary/diary-week-dark.png"
-    media="(prefers-color-scheme: dark)"> <img src="_media/diary/diary-week.png">
-</picture>
+    media="(prefers-color-scheme: dark)">
+<img src="_media/diary/diary-week.png"> </picture>
 
 - **Weekly Breakdown**: Click on "Analyze Week" to drill down into each day's
   performance within that week.

@@ -1,4 +1,4 @@
-## Telegram Bot
+# Telegram Bot <a target="_blank" href="https://tradermake.money/app2/account/telegram" class="btn btn-header">Go to Telegram bot</a>
 
 Stay updated with your trading analytics directly through Telegram.
 

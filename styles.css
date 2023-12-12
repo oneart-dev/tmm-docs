@@ -149,15 +149,17 @@ a {
   text-decoration: none !important;
 }
 
-p a {
+p a:not(.btn),
+li a:not(.btn) {
   letter-spacing: 0.05em;
 }
 
-p a:hover {
+p a:not(.btn):hover,
+li a:not(.btn):hover {
   letter-spacing: 0.07em;
 }
 
-a:hover::before {
+a:not(.btn):hover::before {
   content: '';
   position: absolute;
   top: 110%;
@@ -168,7 +170,8 @@ a:hover::before {
   background: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
 }
 
-p a::before {
+p a:not(.btn)::before,
+li a:not(.btn)::before {
   transition: all 0.2s ease-out;
   top: 100%;
   content: '';
@@ -178,4 +181,84 @@ p a::before {
   height: 2px;
   border-radius: 2px;
   background: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
+}
+
+.btn,
+.btn*,
+.btn:after,
+.btn:before,
+.btn:after,
+.btn:before {
+  display: inline-block;
+  max-width: fit-content;
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn:disabled {
+  cursor: default;
+}
+.btn:-moz-focusring {
+  outline: auto;
+}
+.btn svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn [hidden] {
+  display: none;
+}
+
+.btn-header {
+  font-size: 1rem !important;
+  margin-left: auto;
+}
+
+h1:has(.btn-header) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1rem !important;
+}
+
+.btn {
+  background: var(--btn-background) !important;
+  border: 1px solid !important;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #000;
+  /* display: block; */
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1rem 2.5rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.8rem !important;
+  }
+
+  .markdown-section {
+    padding: inherit 0 !important;
+  }
+}
+
+.btn:hover {
+  box-shadow:
+    0 6px 0 -4px #fff,
+    0 9px 0 -4px #aaa,
+    0 12px 0 -4px #000;
+  transform: translateY(-5px);
+}
+
+.btn:hover {
+  box-shadow:
+    0 6px 0 -4px #fff,
+    0 9px 0 -4px #aaa,
+    0 12px 0 -4px #000;
+  transform: translateY(-5px);
 }

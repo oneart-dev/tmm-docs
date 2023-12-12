@@ -1,4 +1,4 @@
-# Your Guide to analyzing trades
+# Your Guide to analyzing trades <a target="_blank" href="https://tradermake.money/app2/account/my-trades" class="btn btn-header">Go to my trades</a>
 
 Welcome to the 'My Trades' section, where you'll see a list of your trades
 sorted by the opening date. Open trades on the exchange are always listed first.
