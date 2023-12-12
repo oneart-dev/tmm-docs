@@ -142,6 +142,9 @@ picture + em {
   object-fit: scale-down;
   border-radius: 1em;
 }
+.right-panel .large-img {
+  border-radius: 1em;
+}
 
 a {
   transition: all 0.2s ease-in-out;
