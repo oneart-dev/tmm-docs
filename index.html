@@ -48,9 +48,14 @@
         repo: 'https://github.com/oneart-dev/tmm-docs',
         loadSidebar: true,
         loadNavbar: true,
-        coverpage: true,
-        coverpage: ['/', '/ru/'],
+        // coverpage: true,
+        // coverpage: ['/', '/ru/'],
         fallbackLanguages: ['en', 'ru'],
+        nameLink: {
+          '/ru/': '/ru/',
+          '/': '/',
+        },
+        auto2top: true,
         logo: '_media/logo.svg',
         subMaxLevel: 2,
         autoFooter: {

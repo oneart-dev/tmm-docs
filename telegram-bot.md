@@ -28,6 +28,9 @@ Connecting to channels not available.
 <!-- panels:start -->
 <!-- div:left-panel -->
 
+> A maximum of 1 connection can be established with one account in Telegram. If
+> you need to replace the connection, you must first delete the old one.
+
 1. Press `CONNECT TO TELEGRAM` on the device with Telegram installed. You'll be
    redirected to the Telegram app or copy and use this link on your mobile phone
    to connect.

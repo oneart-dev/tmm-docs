@@ -2,7 +2,7 @@
 
 The "Diary" section was meticulously crafted to offer an effortless,
 zero-configuration experience for traders who prefer a straightforward review
-over customizable analytics found in the "Summary" section.
+over customizable analytics found in the ["Summary"](summary.md) section.
 
 ## Example
 
