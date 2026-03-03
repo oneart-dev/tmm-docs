@@ -4,6 +4,7 @@
 - [Diary](diary.md)
 - [Risk management](risk-management.md)
 - [Telegram-bot](telegram-bot.md)
+- [Connections](connections.md)
 - [Data filtering](filters.md)
 - [Top traders](top-traders.md)
 - [Public profile](public-profile.md)

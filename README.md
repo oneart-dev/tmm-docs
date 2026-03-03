@@ -57,6 +57,22 @@ trading strategies.
    Enable your [public profile](public-profile.md) and participate in
    ["Top Traders"](top-traders.md).
 
+<div class="mirror-block">
+
+## Official Website & Mirrors
+
+<div class="mirror-table-wrapper">
+
+| Region           | Link                                                  | Status                                       |
+| :--------------- | :---------------------------------------------------- | :------------------------------------------- |
+| **Global**       | [tradermake.money](https://tradermake.money/)         | <span class="status-pill">Recommended</span> |
+| **Russia & CIS** | [tradersmakemoney.com](https://tradersmakemoney.com/) | <span class="status-pill">Stable</span>      |
+| **Alternative**  | [tradermakemoney.com](https://tradermakemoney.com/)   | <span class="status-pill">Fallback</span>    |
+
+</div>
+
+</div>
+
 ## Have a Suggestion?
 
 Please add it to our suggestion tracker:

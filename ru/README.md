@@ -35,6 +35,22 @@
    Активируйте свой [публичный профиль](public-profile.md) и участвуйте в
    соревновании ["Лучшие трейдеры"](top-traders.md).
 
+<div class="mirror-block">
+
+## 🌐 Официальный сайт и зеркала
+
+<div class="mirror-table-wrapper">
+
+| Регион | Ссылка | Статус |
+| :--- | :--- | :--- |
+| **Глобальный** | [tradermake.money](https://tradermake.money/) | <span class="status-pill">Рекомендуется</span> |
+| **РФ и СНГ** | [tradersmakemoney.com](https://tradersmakemoney.com/) | <span class="status-pill">Прямой доступ</span> |
+| **Резервный** | [tradermakemoney.com](https://tradermakemoney.com/) | <span class="status-pill">Запасной</span> |
+
+</div>
+
+</div>
+
 ## У вас есть предложения?
 
 Пожалуйста, добавьте их в наш трекер предложений:

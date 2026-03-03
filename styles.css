@@ -21,7 +21,8 @@
   --sidebar-toggle-background: #131c2e !important;
   --sidebar-toggle-border-radius: 0 5px 5px 0 !important;
   --sidebar-toggle-icon-color: #fff !important;
-  --sidebar-nav-pagelink-background--active: no-repeat 0px center / 5px 6px
+  --sidebar-nav-pagelink-background--active:
+    no-repeat 0px center / 5px 6px
       linear-gradient(
         225deg,
         transparent 2.75px,
@@ -36,8 +37,8 @@
         transparent 4.25px
       );
   --sidebar-nav-link-border-color--active: rgba(80, 200, 120, 1);
-  --sidebar-nav-pagelink-background--collapse: no-repeat 2px calc(50% - 2.5px) /
-      6px 5px
+  --sidebar-nav-pagelink-background--collapse:
+    no-repeat 2px calc(50% - 2.5px) / 6px 5px
       linear-gradient(
         45deg,
         transparent 2.75px,
@@ -56,6 +57,29 @@
 
   --kbd-margin: 0.1em 0.3em;
   --kbd-padding: 0.35em 0.5em;
+}
+
+.sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(80, 200, 120, 0.3) transparent;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(80, 200, 120, 0.2);
+  border-radius: 20px;
+  border: 2px solid transparent;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(80, 200, 120, 0.4);
 }
 
 .sidebar > h1 img {
@@ -246,7 +270,7 @@ h1:has(.btn-header) {
   }
 
   .markdown-section {
-    padding: inherit 0 !important;
+    padding: 0 !important;
   }
 }
 
@@ -258,10 +282,168 @@ h1:has(.btn-header) {
   transform: translateY(-5px);
 }
 
-.btn:hover {
-  box-shadow:
-    0 6px 0 -4px #fff,
-    0 9px 0 -4px #aaa,
-    0 12px 0 -4px #000;
-  transform: translateY(-5px);
+.mirror-block {
+  background: linear-gradient(
+    111.3deg,
+    rgba(156, 39, 176, 0.05) 9.6%,
+    rgba(0, 188, 212, 0.05) 93.6%
+  );
+  border: 1px solid rgba(156, 39, 176, 0.2);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  margin: 2.5rem 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.mirror-block h2 {
+  margin-top: 0 !important;
+  border: none !important;
+  font-size: 1.4rem !important;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem !important;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mirror-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -1rem; /* Negative margin to bleed out on mobile if needed, but inside padded block */
+  padding: 0 1rem;
+}
+
+.mirror-block table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0 !important;
+  background: transparent !important;
+  min-width: 450px; /* Ensure table doesn't collapse too much */
+}
+
+.mirror-block th {
+  text-align: left;
+  padding: 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(120, 130, 150, 0.6); /* Better visibility on light theme */
+  border-bottom: 1px solid rgba(156, 39, 176, 0.1) !important;
+  border-top: none !important;
+}
+
+.mirror-block td {
+  padding: 1.25rem 1rem;
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(156, 39, 176, 0.05) !important;
+  transition: all 0.2s ease;
+  color: inherit;
+}
+
+.mirror-block tr:hover td {
+  background: rgba(156, 39, 176, 0.03);
+}
+
+.mirror-block a {
+  font-weight: 600;
+  color: #131c2e !important; /* Dark color for light theme */
+  text-decoration: none !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mirror-block a {
+    color: #fff !important;
+  }
+  .mirror-block th {
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.mirror-block a:hover {
+  color: #00bcd4 !important;
+}
+
+.mirror-block tr:last-child td {
+  border-bottom: none !important;
+}
+
+.mirror-block .status-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(80, 200, 120, 0.1);
+  color: rgba(80, 200, 120, 1);
+  border: 1px solid rgba(80, 200, 120, 0.2);
+  white-space: nowrap;
+}
+
+.faq-block {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 1.5rem;
+  border-left: 4px solid #80c878;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.faq-block h2 {
+  margin-top: 0 !important;
+  color: #80c878 !important;
+  font-size: 1.6rem !important;
+  letter-spacing: -0.03em;
+  margin-bottom: 2rem !important;
+}
+
+.faq-item {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(128, 200, 120, 0.1);
+  padding-bottom: 1.5rem;
+}
+
+.faq-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.faq-question {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: inherit;
+}
+
+.faq-question::before {
+  content: "Q:";
+  color: #80c878;
+  font-weight: 900;
+  font-size: 0.9rem;
+  padding-top: 0.1rem;
+}
+
+.faq-answer {
+  padding-left: 2.2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+.faq-answer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .faq-block {
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
 }
