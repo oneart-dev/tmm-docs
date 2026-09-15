@@ -1,125 +1,124 @@
-# Top traders <a target="_blank" href="https://tradermake.money/app2/account/top-traders" class="btn btn-header">Go to Top Traders</a>
+# Top Traders <a target="_blank" href="https://tradermake.money/app2/account/top-traders" class="btn btn-header">Go to Top Traders</a>
 
-Here are several reasons why participating in the top traders can be beneficial
-for you:
+Top Traders is the public leaderboard of TMM traders ranked by their results for
+the day and the month.
 
-1. **Visibility and Recognition:** Being featured on a "Top Traders" page
-   enhances a trader's visibility in the financial community. It serves as a
-   form of recognition for their expertise and successful trading strategies,
-   which can boost their reputation.
-2. **Networking Opportunities:** Such a page often attracts other skilled
-   traders and industry professionals, providing valuable networking
-   opportunities. This can lead to collaborations, knowledge exchange, and even
-   potential business partnerships.
-3. **Attracting Clients and Investors:** For traders who manage funds or seek
-   investment, being listed as a top trader can attract clients and investors.
-   It serves as a testament to their skill and reliability, thereby increasing
-   their credibility in the eyes of potential investors.
-4. **Motivation and Benchmarking:** Being among top traders provides a benchmark
-   for success and can be highly motivating. It encourages continuous
-   improvement and adaptation of strategies to maintain or improve one's
-   position on the list.
+To take part, turn your public profile on and select the API key whose results
+should count on the leaderboard.
 
 ## Leagues
 
-The top traders are divided into 2 leagues:
+Top Traders has two leagues:
 
-- **Top Traders** with open access. Any trader can participate.
-- **PRO League**. Traders who go through a 3-week selection period can enter
-  this league. [More details](#how-to-get-into-the-pro-league).
+- **Top Traders** — the main leaderboard, open to every participant.
+- **PRO League** — a separate leaderboard for traders who have earned 3 PRO
+  points. [More details](#how-to-get-into-the-pro-league).
 
-Each league has two rankings: Top of the Day and Top of the Month.
+Each league has a Top of the Day and a Top of the Month.
 
-## Victory and Prizes
+## Prizes
 
-Throughout the day/month, you see the current values of traders (the top updates
-once an hour). At the end of the day (UTC time zone), the results of the Top of
-the Day are summarized. At the end of the last day of the month, the result of
-the Top of the Month is calculated.
+The leaderboard updates roughly once an hour. Top of the Day is settled at the
+end of the UTC day, Top of the Month at the end of the UTC calendar month.
 
-Prizes are awarded for 1st to 3rd places. Winning the Top of the Day will earn
-you an achievement in your public profile. Winning the Top of the Month gets you
-a one-month subscription extension or the Trader tariff for a month if you don't
-have an active subscription.
+Prizes go to the traders who finish in the top three.
 
-## How to Get into the PRO League?
+Winning Top of the Day earns an achievement on your public profile.
 
-First thing to note: Entry into the PRO League is entirely automatic. You don't
-need to adjust or change your trading in any way.
+A prize place in Top of the Month earns one month of the TMM Trader plan. If you
+already have an active Trader subscription, it is extended by a month. On other
+paid plans, the equivalent number of extra days is added.
 
-### 3-Week Selection and Points
+## How to get into the PRO League :id=how-to-get-into-the-pro-league
 
-At the end of each week, the system reviews your trading, and if all criteria
-are met, you receive 1 point. If the criteria are not met, 1 point is removed if
-you had one previously.
+Entry into the PRO League is automatic. There is nothing extra to enable and
+nothing to change in how you trade.
 
-To enter the PRO League, you need to accumulate 3 points.
+### PRO points
 
-### Staying in the PRO League
+Once a week the system reviews your trading results. If the criteria for the
+week are met, you receive +1 PRO point. If not, you lose one point.
 
-Once you're in the PRO League, the system will continue to evaluate your trading
-every week. If the criteria are not met, you will lose 1 point. Once you lose all
-3 points, you will automatically leave the PRO League, and the entire process
-starts over.
+To enter the PRO League you need 3 PRO points. The fastest way there is three
+successful weeks in a row, but there is no fixed three-week selection period:
+it all depends on the outcome of each weekly review.
 
-Two quiet weeks (no trades) in a row cost nothing, so you can take a short break
-without losing your league status. After that, each further quiet week costs a
-point, and a losing week costs a point. Changing the API key selected for the
-leaderboard resets your points to zero.
+### How to stay in the PRO League
 
-## How is the Top Traders Ranking Calculated?
+Once you are in the PRO League, the weekly reviews continue. If the criteria for
+the week are not met, one PRO point is removed. When your points drop to zero,
+you return to Top Traders and start collecting them again.
 
-Your result is your profit for the period (Top of the Day - the current UTC day,
-Top of the Month - the current UTC month) divided by your own capital - the
-money you put into the account, not the money you made trading. We look at the
-whole account, not at individual trades. Deposit $1,000 and earn $500: +50%.
-Turn that $1,000 into $3,000 without adding funds: +200%.
+The first two weeks without trades do not reduce your points. From the third
+week without trading on, one point is removed per week. A losing week also
+removes one point.
 
-Deposits raise the base. Start the month with $1,000 and earn $300 (+30%);
-deposit another $2,000 and the same $300 becomes $300 ÷ $3,000 = +10%.
-Withdrawals never lower the base, and trading profit never raises it - grow
-$1,000 to $2,000 by trading and you are still measured against $1,000 (+100%),
-so reinvested profit works in your favour.
+Changing the API key selected for the leaderboard resets your PRO points to
+zero.
 
-The base is never smaller than $100 in Top Traders and $1,000 in the PRO League.
-That is not an entry requirement: trade with $40, earn $20, and the result is
-$20 ÷ $100 = +20%.
+## How the result is calculated
 
-Only trades opened after you selected your API key for the leaderboard count,
-and only once they are closed within the day or month. Only positive results
-are ranked. If you chose to show profit, the dollar amount under the percentage
-is exactly the profit the percentage was computed from.
+The result is your profit for the period divided by the calculation base. The
+base is the money you deposited into the account. Profit earned by trading does
+not raise the base.
 
-### Stay Connected
+For example, you deposited $1,000 and earned $500. The result is +50%. If you
+grew the same $1,000 to $3,000 without new deposits, the profit is $2,000 and
+the result is +200%.
 
-The selected API key represents you on the leaderboard, so it cannot be
-disconnected manually while you take part (remove it from your public profile
-first). If the connection is lost for a long time, your result starts over from
-the moment it is restored. Ordinary reconnects, re-syncs and maintenance on our
-side change nothing.
+Deposits raise the calculation base. For example, you started the month with
+$1,000 and earned $300 — the result is +30%. Then you deposited another $2,000.
+Now the same $300 of profit is measured against $3,000, so the result is +10%.
 
-Changing the selected API key resets your PRO League points to zero and
-restarts your result from that moment. Deleting or disabling the selected key
-removes you from the ranking and also resets your points; selecting a key again
-later starts over.
+Withdrawals do not lower the base. If you grew $1,000 to $2,000 purely by
+trading, the result is still measured against $1,000 and comes to +100%.
 
-Attempts to manipulate the ranking may lead to removal from the leaderboard.
+Minimum calculation base:
 
-## Why am I not in the Top?
+- $100 in Top Traders;
+- $1,000 in the PRO League.
 
-There can be several reasons why you are not in the top traders:
+This is not a minimum balance for taking part. For example, if you trade with
+$40 and earned $20, the Top Traders result is calculated as $20 ÷ $100 = +20%.
 
-1. The top has not updated yet. The top updates every hour, so if you just
-   connected, it's worth waiting.
-2. You are not participating in the top traders. To participate, you need to
-   enable your public profile and join the top traders. Choose your active API
-   key and save.
-3. You just selected an API key. Only trades opened after you selected the API
-   key for the leaderboard participate in the top traders; trades opened before
-   that never count.
-4. No positive result yet. Keep in mind that only closed trades participate in
-   the top traders. Floating profit of open positions is not considered, only
-   fixed profit, and only positive results are ranked.
-5. Your selected API key was changed, disconnected for a long time, deleted or
-   disabled. Your result then starts over from the moment the key is selected
-   or restored.
+Top of the Day counts the result for the current UTC day, Top of the Month for
+the current UTC calendar month.
+
+Only trades opened after you selected the API key for the leaderboard and closed
+inside the corresponding period count. Open positions and floating profit are
+not counted. Only traders with a positive result are listed.
+
+If your public profile shows profit, the dollar amount under the percentage is
+the profit that was used to calculate the result.
+
+### The API key must stay connected
+
+While you take part in the leaderboard, the selected API key must stay enabled
+and connected. To disconnect it manually, first remove the key from your
+Top Traders settings.
+
+If the connection to the key is lost for a long time, the result starts over
+from the moment the connection is restored. Ordinary reconnects, data re-syncs
+and maintenance on our side reset nothing.
+
+Changing the API key resets your PRO points to zero and restarts your result.
+If the selected key is deleted or disabled, you stop taking part in the
+leaderboard. When you connect again, the count also starts over.
+
+Attempts to manipulate results may lead to removal from the leaderboard.
+
+## Why am I not in Top Traders?
+
+The most common reasons:
+
+1. **The leaderboard has not refreshed yet.** It is recalculated roughly once an
+   hour, so your result may not appear immediately after you join.
+2. **Participation is not enabled.** Check that your public profile is on and an
+   active API key is selected for Top Traders.
+3. **You only just selected the API key.** Only trades opened after it was
+   connected to the leaderboard count. Trades opened earlier do not count.
+4. **No positive result yet.** Only traders with a positive result on closed
+   trades are listed. Floating profit on open positions is not counted.
+5. **The API key was changed or stayed disconnected for a long time.** In that
+   case the result starts over from the moment the key is connected or
+   restored.
