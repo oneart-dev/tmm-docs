@@ -129,7 +129,7 @@ Just like the [Summary](summary.md) section, you can build a custom dashboard fo
 ## Top Traders & PRO Status
 
 ### Joining the Leaderboard
-To participate in the [Top Traders](top-traders.md) ranking, you must enable the "Top Traders" toggle and select one specific API key to represent you on the leaderboard.
+To participate in the [Top Traders](top-traders.md) ranking, enable the "Top Traders" toggle. Every API key published on your profile takes part in the ranking.
 
 ### PRO League Background
 Traders who achieve [PRO League](top-traders.md#how-to-get-into-the-pro-league) status receive a unique, exclusive background for their profile that cannot be obtained through standard customization.
