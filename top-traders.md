@@ -3,8 +3,8 @@
 Top Traders is the public leaderboard of TMM traders ranked by their results for
 the day and the month.
 
-To take part, turn your public profile on and select the API key whose results
-should count on the leaderboard.
+To take part, turn your public profile on, join Top Traders and publish at least
+one API key. Every key published on your public profile takes part.
 
 ## Leagues
 
@@ -53,8 +53,7 @@ The first two weeks without trades do not reduce your points. From the third
 week without trading on, one point is removed per week. A losing week also
 removes one point.
 
-Changing the API key selected for the leaderboard resets your PRO points to
-zero.
+Adding or removing API keys does not change your PRO points.
 
 ## How the result is calculated
 
@@ -84,26 +83,31 @@ $40 and earned $20, the Top Traders result is calculated as $20 ÷ $100 = +20%.
 Top of the Day counts the result for the current UTC day, Top of the Month for
 the current UTC calendar month.
 
-Only trades opened after you selected the API key for the leaderboard and closed
-inside the corresponding period count. Open positions and floating profit are
+Only trades opened after the key started taking part and closed inside the
+corresponding period count. A key starts taking part when you join Top Traders,
+or when you publish it while already taking part. Open positions and floating profit are
 not counted. Only traders with a positive result are listed.
 
 If your public profile shows profit, the dollar amount under the percentage is
 the profit that was used to calculate the result.
 
-### The API key must stay connected
+### API keys must stay connected
 
-While you take part in the leaderboard, the selected API key must stay enabled
-and connected. To disconnect it manually, first remove the key from your
-Top Traders settings.
+While you take part in the leaderboard, published API keys must stay enabled
+and connected. To disconnect a key manually, first remove it from your public
+profile.
 
-If the connection to the key is lost for a long time, the result starts over
-from the moment the connection is restored. Ordinary reconnects, data re-syncs
-and maintenance on our side reset nothing.
+If the connection to a key is lost for a long time, that key's result starts
+over from the moment the connection is restored; your other keys are
+unaffected. Ordinary reconnects, data re-syncs and maintenance on our side reset
+nothing.
 
-Changing the API key resets your PRO points to zero and restarts your result.
-If the selected key is deleted or disabled, you stop taking part in the
-leaderboard. When you connect again, the count also starts over.
+If you delete a key or remove it from your public profile, only that key stops
+taking part: it keeps what it already contributed to the current day and month
+and simply adds no new trades. Leaving Top Traders or turning your public
+profile off removes you from the leaderboard immediately; when you come back,
+your result starts from that moment. Your PRO points are never reset by key
+changes or by leaving — only the weekly review moves them.
 
 Attempts to manipulate results may lead to removal from the leaderboard.
 
@@ -113,12 +117,12 @@ The most common reasons:
 
 1. **The leaderboard has not refreshed yet.** It is recalculated roughly once an
    hour, so your result may not appear immediately after you join.
-2. **Participation is not enabled.** Check that your public profile is on and an
-   active API key is selected for Top Traders.
-3. **You only just selected the API key.** Only trades opened after it was
-   connected to the leaderboard count. Trades opened earlier do not count.
+2. **Participation is not enabled.** Check that your public profile is on, you have
+   joined Top Traders and at least one API key is published on your profile.
+3. **You only just joined or published the key.** Only trades opened after the
+   key started taking part count. Trades opened earlier do not count.
 4. **No positive result yet.** Only traders with a positive result on closed
    trades are listed. Floating profit on open positions is not counted.
-5. **The API key was changed or stayed disconnected for a long time.** In that
-   case the result starts over from the moment the key is connected or
-   restored.
+5. **A key stayed disconnected for a long time.** In that case that key's result
+   starts over from the moment the connection is restored; your other keys are
+   unaffected.
